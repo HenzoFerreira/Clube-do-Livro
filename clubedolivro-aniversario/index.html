@@ -11,25 +11,39 @@
     <p>Aniversário do Henzo</p>
     </header>
     <main>
-        <section>
 
-            <h2>Sobre o aniversário</h2>
-            <p>Este ano, meu aniversário será no estilo Clube do Livro.
-                Aqui você pode escolher um livro para me presentear.
-            </p>
-            <ul>
-                <li>Filosofia</li>
-                <li>Teologia</li>
-                <li>Literatura</li>
-                <li>Manga</li>
-                <li>Poesia</li>
-                <li>Ficção Científica</li>
-            </ul>
+        <section id= "categorias">
+            <h2>Categorias</h2>
+
+            <nav>
+                <button data-filter="todos">Todos</button>
+                <button data-filter="filosofia">Manga</button>
+                <button data-filter="teologia">Teologia</button>
+                <button data-filter="psicologia">Psicologia</button>
+                <button data-filter="romance">Romance</button>
+                <button data-filter="aventura">Aventura</button>
+                <button data-filter="ficcao">Ficção</button>
+                <button data-filter="misterio">Mistério</button>
+                <button data-filter="biografia">Biografia</button>
+                <button data-filter="literatura">Literatura</button>
+            </nav>
+
+        </section>
+
+        <section id="livros">
             <h2>Escolha um livro</h2>
+
+            <!-- Livros Aqui -->
             
-            <article class="book" data-id="estrangeiro" data-category="filosofia">
+            <article class="book" data-category="filosofia">
                 <h3>
-                    <a href="https://www.amazon.com.br/estrangeiro-Albert-Camus/dp/8501014869/ref=sr_1_1?crid=2MM4N5Q72OYYU&dib=eyJ2IjoiMSJ9.HXdqeBk7Sf9jy3loHrIJFHxNGOc6NHLZx-H7UCvWkW655mzME15jN1QteiKfImw9PWH3uDabFeU1b9HDA7cWuLJfLdvta1QZt7cDNbg-AIagt9Aa78j84fjHSX20RZirc14QhbbP0OLfnxThTwZ426VAildTbR-9Xm-v00rg1RC60xerPfX3TUl09YXL1HG10qczVhUsQ_tIsWjDCZJ47A-awbr0oqCxZkl9Hdm_9htaGTl2-SFsObEzTTdI0a8iDtjUN5kKdAaAk08_w7VllhhAdhCB3cXoIo2K_BU839E.2h-51MImyEz7avzQYlSuu5evo7ljDzBlZYLwOmFmmUQ&dib_tag=se&keywords=o+estrangeiro+albert+camus&qid=1769707191&sprefix=o+estra%2Caps%2C367&sr=8-1" target="_blank" rel="noopener noreferrer">O Estrangeiro</a>
+                    <a 
+                        href="https://www.amazon.com.br/estrangeiro-Albert-Camus/dp/8501014869/ref=sr_1_1?crid=2MM4N5Q72OYYU&dib=eyJ2IjoiMSJ9.HXdqeBk7Sf9jy3loHrIJFHxNGOc6NHLZx-H7UCvWkW655mzME15jN1QteiKfImw9PWH3uDabFeU1b9HDA7cWuLJfLdvta1QZt7cDNbg-AIagt9Aa78j84fjHSX20RZirc14QhbbP0OLfnxThTwZ426VAildTbR-9Xm-v00rg1RC60xerPfX3TUl09YXL1HG10qczVhUsQ_tIsWjDCZJ47A-awbr0oqCxZkl9Hdm_9htaGTl2-SFsObEzTTdI0a8iDtjUN5kKdAaAk08_w7VllhhAdhCB3cXoIo2K_BU839E.2h-51MImyEz7avzQYlSuu5evo7ljDzBlZYLwOmFmmUQ&dib_tag=se&keywords=o+estrangeiro+albert+camus&qid=1769707191&sprefix=o+estra%2Caps%2C367&sr=8-1" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
+                        O Estrangeiro
+                    </a>
                 </h3>
 
                 <p class="author">Autor: Albert Camus</p>
