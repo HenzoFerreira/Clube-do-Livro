@@ -8,42 +8,43 @@
 </head>
 <body>
     <header>
-    <h1>Clube do Livro</h1>
+    <h1>Clube do Livro ☕</h1>
     <p>Escolha um livro para me presentear</p>
     </header>
     <main>
 
+        <nav class="menu-categorias">
+
+        </nav>
+
         <section id= "categorias">
-            <h2>Categorias</h2>
+            <h2>Categorias:</h2>
 
             <nav>
-                <button data-filter="todos">Todos</button>
-                <button data-filter="filosofia">Manga</button>
-                <button data-filter="teologia">Teologia</button>
-                <button data-filter="psicologia">Psicologia</button>
-                <button data-filter="romance">Romance</button>
-                <button data-filter="aventura">Aventura</button>
-                <button data-filter="ficcao">Ficção</button>
-                <button data-filter="misterio">Mistério</button>
-                <button data-filter="biografia">Biografia</button>
-                <button data-filter="literatura">Literatura</button>
+                <button class="btn-categoria" data-filter="todos">Todos</button>
+                <button class="btn-categoria" data-filter="manga">Manga</button>
+                <button class="btn-categoria" data-filter="teologia">Teologia</button>
+                <button class="btn-categoria" data-filter="psicologia">Psicologia</button>
+                <button class="btn-categoria" data-filter="romance">Romance</button>
+                <button class="btn-categoria" data-filter="aventura">Aventura</button>
+                <button class="btn-categoria" data-filter="ficcao">Ficção</button>
+                <button class="btn-categoria" data-filter="misterio">Mistério</button>
+                <button class="btn-categoria" data-filter="biografia">Biografia</button>
+                <button class="btn-categoria" data-filter="literatura">Literatura</button>
             </nav>
 
         </section>
 
         <section id="livros">
-            <h2>Escolha um livro</h2>
+            <h2>Escolha um livro:</h2>
 
-            <!-- Livros Aqui -->
+            <!--Filosofia-->
+            <section class="categoria">
+                <h3>Filosofia</h3>
+
             <article class="book" data-id="estrangeiro" data-category="filosofia">
                 <h3>
-                    <a 
-                        href="https://abre.ai/oDgA" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        >
-                        O Estrangeiro
-                    </a>
+                    <a href="https://abre.ai/oDgA" target="_blank" rel="noopener noreferrer">O Estrangeiro</a>
                 </h3>
 
                 <p class="author">Autor: Albert Camus</p>
@@ -54,34 +55,9 @@
                 </button>
             </article>
 
-            <article class="book" data-id="biblioteca" data-category="romance">
-                <h3>
-                    <a 
-                        href="https://abre.ai/oDgb" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        >
-                        A Biblioteca da Meia-Noite
-                    </a>
-                </h3>
-
-                <p class="author">Autor: Matt Haig</p>
-                <p class="category">Categoria: Romance</p>
-
-                <button class="select-book">
-                    Escolher este livro
-                </button>
-            </article>
-
             <article class="book" data-id="republica" data-category="filosofia">
                 <h3>
-                    <a 
-                        href="https://abre.ai/oDgJ" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        >
-                        A República
-                    </a>
+                    <a href="https://abre.ai/oDgJ" target="_blank" rel="noopener noreferrer">A República</a>
                 </h3>
 
                 <p class="author">Autor: Platão</p>
@@ -91,7 +67,25 @@
                     Escolher este livro
                 </button>
             </article>
+            </section>
 
+            <!--Romance-->
+            <section class="categoria">
+                <h3>Romance</h3>
+
+                <article class="book" data-id="biblioteca" data-category="romance">
+                <h3>
+                    <a href="https://abre.ai/oDgb" target="_blank" rel="noopener noreferrer">A Biblioteca da Meia-Noite</a>
+                </h3>
+
+                <p class="author">Autor: Matt Haig</p>
+                <p class="category">Categoria: Romance</p>
+
+                <button class="select-book">
+                    Escolher este livro
+                </button>
+            </article>
+            </section>
         </section>
     </main>
 <script src="script.js"></script>
